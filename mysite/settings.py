@@ -26,7 +26,7 @@ SECRET_KEY = 's47q*9$&87gwd&6o-c@bp*bn8&4bwrstdu4=taf%u+-q9cul_&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['agile-dusk-39712.herokuapp.com']
+ALLOWED_HOSTS = ['fftree.herokuapp.com']
 
 
 # Application definition
