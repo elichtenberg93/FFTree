@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'fftree/style.css' %}"
+
+{% if brother_list %}
+<ul>
+	{% for brother in brother_list %}
+	<li><a href="{% url 'fftree:brother' brother.id %}">{{ brother.name }}, {{ brother.grad_year }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+<p> No brothers available.</p>
+{% endif %}

@@ -1,0 +1,17 @@
+{% load static %}
+
+<h1>{{ brother.name }}</h1>
+<div>
+	<img src="{% static 'fftree/images/sad.png' %}" height="50%">
+</div>
+<p>Graduated {{ brother.grad_year }}</p>
+<p>Initiated {{ brother.init_year }}</p>
+
+<!-- Add a form eventually, once know what I should put there. Maybe comments or something
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'fftree:comment' brother.id %}" method="post">
+	{% csrf_token %}
+	<input type="text"-->
+
+<!-- Figure out how to add a custom image based on brother.id, also figure out how to access parameters in the javascript page -->
