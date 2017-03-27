@@ -5,10 +5,9 @@ from .models import Brother
 
 # Create your views here.
 def index(request):
-	return HttpResponse("Hello World")
-	#brother_list = Brother.objects.order_by('-init_year')
-	#context = {'brother_list': brother_list,}
-	#return render(request, 'fftree/index.html', context)
+	brother_list = Brother.objects.order_by('-init_year')
+	context = {'brother_list': brother_list,}
+	return render(request, 'fftree/index.html', context)
 
 def pledgeClass(request, init_year):
 	return HttpResponse("You're looking at brothers in the %s pledge class." % init_year)
